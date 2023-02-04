@@ -466,6 +466,8 @@ void MainWindow::on_action8_Neighbours_triggered()
 
 void MainWindow::on_RunButton_clicked()
 {
+    if(grid_ == nullptr) return;
+
     //set correct algortihm
     switch(ui->AlgcomboBox->currentIndex()){
 
